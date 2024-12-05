@@ -6,9 +6,9 @@
   "scripts": {
     "install-server": "cd WebProject/backend && npm install",
     "start-server": "cd WebProject/backend && node app.js",
-    "install-client": "cd WebProject/frontend && npm install",
-    "build-client": "cd WebProject/frontend && npm run build",
-    "start-client": "cd WebProject/frontend && npm run start"
+    "install-client": "cd WebProject/frontend/customer && npm install",
+    "build-client": "cd WebProject/frontend/customer && npm run build",
+    "start-client": "cd WebProject/frontend/customer && npm run start"
   },
   "keywords": [],
   "author": "",
