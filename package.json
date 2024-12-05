@@ -1,0 +1,16 @@
+{
+  "name": "mern-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "cd WebProject/backend && npm install",
+    "start-server": "cd WebProject/backend && node app.js",
+    "install-client": "cd WebProject/frontend && npm install",
+    "build-client": "cd WebProject/frontend && npm run build",
+    "start-client": "cd WebProject/frontend && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
