@@ -25,7 +25,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', formData);
+      const response = await axios.post('https://cafe-management-zeta.vercel.app/api/auth/login', formData);
       showToast({
         title: "Success",
         description: "Login successful",

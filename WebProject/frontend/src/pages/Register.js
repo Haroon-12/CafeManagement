@@ -45,7 +45,7 @@ function Register() {
       return;
     }
     try {
-      await axios.post('http://localhost:5000/api/otp/send-otp', { email: formData.email });
+      await axios.post('https://cafe-management-zeta.vercel.app/api/otp/send-otp', { email: formData.email });
       setOtpSent(true);
       showToast({
         title: "Success",
@@ -65,7 +65,7 @@ function Register() {
     e.preventDefault();
     try {
       console.log('Payload for OTP verification:', { email: formData.email, otp });
-      await axios.post('http://localhost:5000/api/otp/verify-otp', {
+      await axios.post('https://cafe-management-zeta.vercel.app/api/otp/verify-otp', {
         email: formData.email,
         otp: otp, // Fixing the payload
       });
@@ -80,7 +80,7 @@ function Register() {
         address: formData.address,
       });
 
-      await axios.post('http://localhost:5000/api/auth/register', {
+      await axios.post('https://cafe-management-zeta.vercel.app/api/auth/register', {
         username: formData.username,
         email: formData.email,
         password: formData.password,

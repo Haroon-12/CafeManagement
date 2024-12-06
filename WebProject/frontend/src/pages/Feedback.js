@@ -53,7 +53,7 @@ function Feedback() {
     try {
       const token = getToken(); // Retrieve the token
       await axios.post(
-        'http://localhost:5000/api/customer/feedback', 
+        'https://cafe-management-zeta.vercel.app/api/customer/feedback', 
         feedback, 
         {
           headers: {
